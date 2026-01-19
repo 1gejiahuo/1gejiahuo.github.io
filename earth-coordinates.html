@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth Coordinates | 地球坐标 - To Infinite and Beyond</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="starfield" id="starfield"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-symbol">∞</span>
+                    <span class="logo-text">To Infinite and Beyond</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home <span class="nav-chinese">首页</span></a></li>
+                <li class="nav-item"><a href="index.html#dictionary" class="nav-link">Dictionary <span class="nav-chinese">词典</span></a></li>
+                <li class="nav-item"><a href="index.html#codebook" class="nav-link">Codebook <span class="nav-chinese">密码本</span></a></li>
+                <li class="nav-item"><a href="index.html#coordinates" class="nav-link active">Coordinates <span class="nav-chinese">坐标</span></a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="subpage-hero">
+        <div class="container">
+            <a href="index.html#coordinates" class="back-link">← Back to Coordinates</a>
+            <h1>Earth Coordinates</h1>
+            <p class="cn-title">地球坐标</p>
+            <p class="intro">
+                How do you tell someone your address when there are no shared maps?
+                You use the universe's own landmarks — pulsars for space, and the cosmic microwave background for time.
+                <span class="cn">
+                    当没有共同的地图时，你如何告诉别人你的地址？
+                    你使用宇宙自己的地标——用脉冲星定位空间，用宇宙微波背景辐射定位时间。
+                </span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Philosophy Introduction -->
+    <section class="coordinates-philosophy">
+        <div class="container">
+            <div class="philosophy-intro">
+                <div class="philosophy-icon-large">
+                    <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1">
+                        <circle cx="50" cy="50" r="45" opacity="0.3"/>
+                        <circle cx="50" cy="50" r="30" opacity="0.5"/>
+                        <circle cx="50" cy="50" r="15" opacity="0.7"/>
+                        <circle cx="50" cy="50" r="4" fill="currentColor"/>
+                        <line x1="50" y1="5" x2="50" y2="20" opacity="0.6"/>
+                        <line x1="95" y1="50" x2="80" y2="50" opacity="0.6"/>
+                        <line x1="50" y1="95" x2="50" y2="80" opacity="0.6"/>
+                        <line x1="5" y1="50" x2="20" y2="50" opacity="0.6"/>
+                    </svg>
+                </div>
+                <blockquote>
+                    "The cosmos is within us. We are made of star-stuff.
+                    We are a way for the universe to know itself."
+                </blockquote>
+                <cite>— Carl Sagan</cite>
+                <p class="philosophy-text">
+                    In the vast cosmic ocean, how does one describe "here"? Street names mean nothing.
+                    Planetary orbits are local artifacts. Even the position of our Sun within the Milky Way
+                    is meaningful only to beings who share our galactic neighborhood.
+                </p>
+                <p class="philosophy-text cn">
+                    在浩瀚的宇宙海洋中，如何描述"这里"？街道名称毫无意义。
+                    行星轨道只是局部产物。即使太阳在银河系中的位置，
+                    也只对与我们共享银河邻里的生命有意义。
+                </p>
+                <p class="philosophy-text">
+                    We need coordinates that transcend locality — that can be understood by any civilization,
+                    anywhere in the universe. We need <strong>cosmic lighthouses</strong>.
+                </p>
+                <p class="philosophy-text cn">
+                    我们需要超越局部性的坐标——任何文明，在宇宙的任何地方，都能理解的坐标。
+                    我们需要<strong>宇宙灯塔</strong>。
+                </p>
+            </div>
+
+            <!-- Why Both Space AND Time -->
+            <div class="spacetime-necessity" style="margin-top: 48px; padding: 32px; background: rgba(100,255,218,0.05); border-radius: 16px; border: 1px solid rgba(100,255,218,0.2);">
+                <h3 style="color: var(--aurora-green); margin-bottom: 16px;">Why Both Space AND Time Coordinates?</h3>
+                <p class="cn-subtitle" style="margin-bottom: 24px;">为什么同时需要空间和时间坐标？</p>
+
+                <div style="display: grid; gap: 24px;">
+                    <div style="padding: 20px; background: rgba(0,0,0,0.3); border-radius: 12px;">
+                        <h4 style="color: var(--text-primary); margin-bottom: 12px;">🌀 No Absolute Reference Frame</h4>
+                        <p style="color: var(--text-secondary);">
+                            In the universe, there is no fixed "center" or absolute reference point. Everything is in motion:
+                            the Earth orbits the Sun, the Sun orbits the galactic center, and our galaxy moves through
+                            the cosmic web. A spatial position without a time reference is meaningless — the location
+                            you describe will have moved by the time someone arrives.
+                        </p>
+                        <p class="cn" style="color: var(--text-dim); margin-top: 8px;">
+                            在宇宙中，没有固定的"中心"或绝对参考点。一切都在运动：
+                            地球绕太阳运行，太阳绕银河系中心运行，我们的银河系在宇宙网络中移动。
+                            没有时间参考的空间位置是没有意义的——当有人到达时，你描述的位置早已移动。
+                        </p>
+                    </div>
+
+                    <div style="padding: 20px; background: rgba(0,0,0,0.3); border-radius: 12px;">
+                        <h4 style="color: var(--text-primary); margin-bottom: 12px;">⏰ Pulsars Move Too</h4>
+                        <p style="color: var(--text-secondary);">
+                            Even pulsars — our cosmic lighthouses — are not stationary. They have proper motions through space.
+                            The 15 pulsars we reference are identified by their unique rotation periods (which are extremely stable),
+                            not by their positions. But the distances from Earth change over time. By including the CMB temperature
+                            (our cosmic timestamp), we specify exactly WHEN these measurements were made.
+                        </p>
+                        <p class="cn" style="color: var(--text-dim); margin-top: 8px;">
+                            即使是脉冲星——我们的宇宙灯塔——也不是静止的。它们有穿越空间的自行运动。
+                            我们引用的15颗脉冲星通过其独特的旋转周期（极其稳定）来识别，而不是通过它们的位置。
+                            但与地球的距离会随时间变化。通过包含CMB温度（我们的宇宙时间戳），
+                            我们精确指定了这些测量是何时进行的。
+                        </p>
+                    </div>
+
+                    <div style="padding: 20px; background: rgba(0,0,0,0.3); border-radius: 12px;">
+                        <h4 style="color: var(--text-primary); margin-bottom: 12px;">🎯 Complete 4D Address</h4>
+                        <p style="color: var(--text-secondary);">
+                            Just as Einstein showed that space and time are woven together as spacetime, a complete
+                            cosmic address must include both. The 15 pulsars give us spatial triangulation;
+                            the CMB temperature gives us temporal context. Together, they form a complete 4-dimensional
+                            coordinate that any civilization can use to locate us in the universe.
+                        </p>
+                        <p class="cn" style="color: var(--text-dim); margin-top: 8px;">
+                            正如爱因斯坦所展示的，空间和时间交织成时空，一个完整的宇宙地址必须同时包含两者。
+                            15颗脉冲星给我们空间三角定位；CMB温度给我们时间背景。
+                            它们共同构成一个完整的四维坐标，任何文明都可以用它在宇宙中定位我们。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spatial Coordinates Section -->
+    <section class="spatial-coordinates">
+        <div class="container">
+            <span class="section-label">Spatial Position</span>
+            <h2 class="section-title">15 Cosmic Lighthouses</h2>
+            <p class="section-title-cn">15座宇宙灯塔</p>
+
+            <div class="pulsar-intro">
+                <div class="pulsar-visual-large">
+                    <div class="pulsar-center"></div>
+                    <div class="pulsar-beam beam-1"></div>
+                    <div class="pulsar-beam beam-2"></div>
+                    <div class="pulsar-ring ring-1"></div>
+                    <div class="pulsar-ring ring-2"></div>
+                    <div class="pulsar-ring ring-3"></div>
+                </div>
+                <div class="pulsar-text">
+                    <h3>What is a Pulsar?</h3>
+                    <p class="cn-subtitle">什么是脉冲星？</p>
+                    <p>
+                        A pulsar is a rapidly rotating neutron star — the collapsed core of a massive star
+                        that has died in a supernova explosion. As it spins, it emits beams of electromagnetic
+                        radiation like a cosmic lighthouse. Each pulsar has a unique "fingerprint": its
+                        rotation period, which can be measured to extraordinary precision.
+                    </p>
+                    <p class="cn">
+                        脉冲星是一颗快速旋转的中子星——一颗在超新星爆炸中死亡的大质量恒星的坍缩核心。
+                        当它旋转时，它像宇宙灯塔一样发射电磁辐射束。每颗脉冲星都有独特的"指纹"：
+                        它的旋转周期，可以被测量到极高的精度。
+                    </p>
+                    <p>
+                        Because pulsars are visible across the galaxy and beyond, and because their periods
+                        are unique and stable over millions of years, they serve as perfect cosmic beacons
+                        for triangulating position in space.
+                    </p>
+                    <p class="cn">
+                        因为脉冲星在整个银河系及更远的地方都可见，而且它们的周期在数百万年内都是
+                        独特且稳定的，所以它们是三角测量空间位置的完美宇宙信标。
+                    </p>
+                </div>
+            </div>
+
+            <!-- Pulsar Table - Human Units First -->
+            <div class="pulsar-table">
+                <h3>The 15 Reference Pulsars</h3>
+                <p class="cn-subtitle">15颗参考脉冲星</p>
+
+                <!-- Human-readable data first -->
+                <div style="margin-bottom: 48px;">
+                    <h4 style="color: var(--aurora-blue); margin-bottom: 16px;">Step 1: Measurements in Human Units</h4>
+                    <p class="cn" style="color: var(--text-dim); margin-bottom: 16px;">第一步：人类单位的测量数据</p>
+                    <p style="color: var(--text-secondary); margin-bottom: 24px;">
+                        First, we present the raw astronomical data using familiar units (milliseconds for period, light-years for distance).
+                        <span class="cn" style="display: block; margin-top: 8px; color: var(--text-dim);">
+                            首先，我们使用熟悉的单位展示原始天文数据（周期用毫秒，距离用光年）。
+                        </span>
+                    </p>
+
+                    <div style="overflow-x: auto;">
+                        <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+                            <thead>
+                                <tr style="border-bottom: 2px solid var(--aurora-green);">
+                                    <th style="padding: 12px 8px; text-align: left; color: var(--text-primary);">#</th>
+                                    <th style="padding: 12px 8px; text-align: left; color: var(--text-primary);">Pulsar Name</th>
+                                    <th style="padding: 12px 8px; text-align: left; color: var(--text-primary);">Period (ms)</th>
+                                    <th style="padding: 12px 8px; text-align: left; color: var(--text-primary);">Distance (ly)</th>
+                                    <th style="padding: 12px 8px; text-align: left; color: var(--text-primary);">Constellation</th>
+                                </tr>
+                            </thead>
+                            <tbody style="color: var(--text-secondary);">
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                    <td style="padding: 10px 8px;">01</td>
+                                    <td style="padding: 10px 8px;">PSR J0437-4715</td>
+                                    <td style="padding: 10px 8px;">5.757</td>
+                                    <td style="padding: 10px 8px;">509</td>
+                                    <td style="padding: 10px 8px;">Pictor</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                    <td style="padding: 10px 8px;">02</td>
+                                    <td style="padding: 10px 8px;">PSR J0613-0200</td>
+                                    <td style="padding: 10px 8px;">3.062</td>
+                                    <td style="padding: 10px 8px;">780</td>
+                                    <td style="padding: 10px 8px;">Monoceros</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                    <td style="padding: 10px 8px;">03</td>
+                                    <td style="padding: 10px 8px;">PSR J1012+5307</td>
+                                    <td style="padding: 10px 8px;">5.256</td>
+                                    <td style="padding: 10px 8px;">1,560</td>
+                                    <td style="padding: 10px 8px;">Ursa Major</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                    <td style="padding: 10px 8px;">04</td>
+                                    <td style="padding: 10px 8px;">PSR J1024-0719</td>
+                                    <td style="padding: 10px 8px;">5.162</td>
+                                    <td style="padding: 10px 8px;">1,130</td>
+                                    <td style="padding: 10px 8px;">Sextans</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                    <td style="padding: 10px 8px;">05</td>
+                                    <td style="padding: 10px 8px;">PSR J1455-3330</td>
+                                    <td style="padding: 10px 8px;">7.987</td>
+                                    <td style="padding: 10px 8px;">2,340</td>
+                                    <td style="padding: 10px 8px;">Lupus</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                    <td style="padding: 10px 8px;">06</td>
+                                    <td style="padding: 10px 8px;">PSR J1600-3053</td>
+                                    <td style="padding: 10px 8px;">3.598</td>
+                                    <td style="padding: 10px 8px;">5,850</td>
+                                    <td style="padding: 10px 8px;">Scorpius</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                    <td style="padding: 10px 8px;">07</td>
+                                    <td style="padding: 10px 8px;">PSR J1614-2230</td>
+                                    <td style="padding: 10px 8px;">3.151</td>
+                                    <td style="padding: 10px 8px;">2,600</td>
+                                    <td style="padding: 10px 8px;">Scorpius</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                    <td style="padding: 10px 8px;">08</td>
+                                    <td style="padding: 10px 8px;">PSR J1713+0747</td>
+                                    <td style="padding: 10px 8px;">4.570</td>
+                                    <td style="padding: 10px 8px;">3,800</td>
+                                    <td style="padding: 10px 8px;">Ophiuchus</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                    <td style="padding: 10px 8px;">09</td>
+                                    <td style="padding: 10px 8px;">PSR J1744-1134</td>
+                                    <td style="padding: 10px 8px;">4.075</td>
+                                    <td style="padding: 10px 8px;">1,300</td>
+                                    <td style="padding: 10px 8px;">Ophiuchus</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                    <td style="padding: 10px 8px;">10</td>
+                                    <td style="padding: 10px 8px;">PSR J1857+0943</td>
+                                    <td style="padding: 10px 8px;">5.362</td>
+                                    <td style="padding: 10px 8px;">3,200</td>
+                                    <td style="padding: 10px 8px;">Aquila</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                    <td style="padding: 10px 8px;">11</td>
+                                    <td style="padding: 10px 8px;">PSR J1909-3744</td>
+                                    <td style="padding: 10px 8px;">2.947</td>
+                                    <td style="padding: 10px 8px;">3,500</td>
+                                    <td style="padding: 10px 8px;">Corona Australis</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                    <td style="padding: 10px 8px;">12</td>
+                                    <td style="padding: 10px 8px;">PSR J1939+2134</td>
+                                    <td style="padding: 10px 8px;">1.558</td>
+                                    <td style="padding: 10px 8px;">12,000</td>
+                                    <td style="padding: 10px 8px;">Vulpecula</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                    <td style="padding: 10px 8px;">13</td>
+                                    <td style="padding: 10px 8px;">PSR J2124-3358</td>
+                                    <td style="padding: 10px 8px;">4.931</td>
+                                    <td style="padding: 10px 8px;">980</td>
+                                    <td style="padding: 10px 8px;">Microscopium</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                    <td style="padding: 10px 8px;">14</td>
+                                    <td style="padding: 10px 8px;">PSR J2145-0750</td>
+                                    <td style="padding: 10px 8px;">16.052</td>
+                                    <td style="padding: 10px 8px;">1,630</td>
+                                    <td style="padding: 10px 8px;">Aquarius</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                                    <td style="padding: 10px 8px;">15</td>
+                                    <td style="padding: 10px 8px;">PSR B1937+21</td>
+                                    <td style="padding: 10px 8px;">1.558</td>
+                                    <td style="padding: 10px 8px;">10,000</td>
+                                    <td style="padding: 10px 8px;">Vulpecula</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p style="margin-top: 16px; font-size: 13px; color: var(--text-dim);">
+                        Note: These are millisecond pulsars chosen for their timing stability. Period is rotation period; Distance is approximate.
+                        <span class="cn" style="display: block; margin-top: 4px;">
+                            注：这些是毫秒脉冲星，因其计时稳定性而被选择。周期为旋转周期；距离为近似值。
+                        </span>
+                    </p>
+                </div>
+
+                <!-- Arrow transition -->
+                <div style="text-align: center; margin: 32px 0;">
+                    <div style="font-size: 32px; color: var(--aurora-green);">⬇</div>
+                    <p style="color: var(--aurora-green); margin-top: 8px;">Translate to Universal Language</p>
+                    <p class="cn" style="color: var(--text-dim);">翻译为通用语言</p>
+                </div>
+
+                <!-- Universal Language Version -->
+                <div style="margin-top: 40px;">
+                    <h4 style="color: var(--aurora-green); margin-bottom: 16px; font-size: 1.4rem;">Step 2: Universal Language Encoding</h4>
+                    <p class="cn" style="color: var(--text-dim); margin-bottom: 20px; font-size: 1.1rem; border-bottom: 1px solid rgba(0,255,163,0.2); padding-bottom: 10px;">第二步：通用语言编码</p>
+                    <p class="table-intro" style="margin-bottom: 30px;">
+                        Each pulsar is identified by its rotation period (in Planck time) and its distance from Earth (in Planck length).
+                        <span class="cn" style="display: block; margin-top: 5px; opacity: 0.8;">每颗脉冲星通过其旋转周期（普朗克时间）和与地球的距离（普朗克长度）来识别。</span>
+                    </p>
+                </div>
+
+                <div class="pulsar-horizontal-list" style="display: flex; flex-direction: column; gap: 20px;">
+                    
+                    <style>
+                        .pulsar-card {
+                            background: rgba(255, 255, 255, 0.02);
+                            border: 1px solid rgba(255, 255, 255, 0.05);
+                            border-radius: 12px;
+                            padding: 20px;
+                            transition: all 0.3s ease;
+                        }
+                        .pulsar-card:hover {
+                            background: rgba(255, 255, 255, 0.04);
+                            border-color: var(--aurora-green);
+                        }
+                        .pulsar-header {
+                            display: flex;
+                            align-items: center;
+                            gap: 15px;
+                            margin-bottom: 15px;
+                        }
+                        .pulsar-id {
+                            background: var(--aurora-green);
+                            color: #000;
+                            font-weight: bold;
+                            padding: 2px 10px;
+                            border-radius: 4px;
+                            font-size: 0.9rem;
+                        }
+                        .pulsar-name {
+                            color: var(--text-primary);
+                            font-family: 'Space Mono', monospace;
+                            font-weight: 700;
+                            letter-spacing: 1px;
+                        }
+                        .data-strip {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            background: rgba(0, 0, 0, 0.3);
+                            margin-bottom: 8px;
+                            padding: 10px 18px;
+                            border-radius: 6px;
+                            border-left: 2px solid rgba(255,255,255,0.1);
+                        }
+                        .data-strip code {
+                            color: var(--aurora-blue);
+                            font-size: 0.82rem;
+                            letter-spacing: 0.5px;
+                        }
+                        .data-strip .translation-label {
+                            color: var(--text-secondary);
+                            font-size: 0.85rem;
+                            min-width: 300px;
+                            text-align: right;
+                            font-family: 'Noto Sans SC', sans-serif;
+                        }
+                        .translation-label strong { color: var(--text-primary); margin-right: 4px; }
+                        .translation-label em { font-style: normal; color: var(--text-dim); margin-left: 4px; }
+                    </style>
+
+                    <div class="pulsar-card">
+                        <div class="pulsar-header">
+                            <span class="pulsar-id">01</span><span class="pulsar-name">PSR J0437-4715</span>
+                        </div>
+                        <div class="data-strip">
+                            <code>10.1001 0.5 0.13 0.5 1010 0.5 0.16 0.5 101000 0.5 0.3 0.5 0.31</code>
+                            <span class="translation-label"><strong>Period:</strong> 10.1001 × 10<sup>40</sup> t<sub>P</sub> <em>(周期)</em></span>
+                        </div>
+                        <div class="data-strip">
+                            <code>1.101 0.5 0.13 0.5 1010 0.5 0.16 0.5 110110 0.5 0.3 0.5 0.32 0.5 0.9</code>
+                            <span class="translation-label"><strong>Distance:</strong> 1.101 × 10<sup>54</sup> ℓ<sub>P</sub> <em>(距离)</em></span>
+                        </div>
+                    </div>
+
+                    <div class="pulsar-card">
+                        <div class="pulsar-header">
+                            <span class="pulsar-id">02</span><span class="pulsar-name">PSR J0613-0200</span>
+                        </div>
+                        <div class="data-strip">
+                            <code>10.111 0.5 0.13 0.5 1010 0.5 0.16 0.5 101000 0.5 0.3 0.5 0.31</code>
+                            <span class="translation-label"><strong>Period:</strong> 10.111 × 10<sup>40</sup> t<sub>P</sub> <em>(周期)</em></span>
+                        </div>
+                        <div class="data-strip">
+                            <code>1.101 0.5 0.13 0.5 1010 0.5 0.16 0.5 110110 0.5 0.3 0.5 0.32 0.5 0.9</code>
+                            <span class="translation-label"><strong>Distance:</strong> 1.101 × 10<sup>54</sup> ℓ<sub>P</sub> <em>(距离)</em></span>
+                        </div>
+                    </div>
+
+                    <div class="pulsar-card">
+                        <div class="pulsar-header">
+                            <span class="pulsar-id">03</span><span class="pulsar-name">PSR J1012+5307</span>
+                        </div>
+                        <div class="data-strip">
+                            <code>101.0111 0.5 0.13 0.5 1010 0.5 0.16 0.5 101000 0.5 0.3 0.5 0.31</code>
+                            <span class="translation-label"><strong>Period:</strong> 101.0111 × 10<sup>40</sup> t<sub>P</sub> <em>(周期)</em></span>
+                        </div>
+                        <div class="data-strip">
+                            <code>10.001 0.5 0.13 0.5 1010 0.5 0.16 0.5 110110 0.5 0.3 0.5 0.32 0.5 0.9</code>
+                            <span class="translation-label"><strong>Distance:</strong> 10.001 × 10<sup>54</sup> ℓ<sub>P</sub> <em>(距离)</em></span>
+                        </div>
+                    </div>
+
+                    <div class="pulsar-card">
+                        <div class="pulsar-header">
+                            <span class="pulsar-id">04</span><span class="pulsar-name">PSR J1024-0719</span>
+                        </div>
+                        <div class="data-strip">
+                            <code>1.0001 0.5 0.13 0.5 1010 0.5 0.16 0.5 101001 0.5 0.3 0.5 0.31</code>
+                            <span class="translation-label"><strong>Period:</strong> 1.0001 × 10<sup>41</sup> t<sub>P</sub> <em>(周期)</em></span>
+                        </div>
+                        <div class="data-strip">
+                            <code>11.0 0.5 0.13 0.5 1010 0.5 0.16 0.5 110101 0.5 0.3 0.5 0.32 0.5 0.9</code>
+                            <span class="translation-label"><strong>Distance:</strong> 11.0 × 10<sup>53</sup> ℓ<sub>P</sub> <em>(距离)</em></span>
+                        </div>
+                    </div>
+
+                    <div class="pulsar-card">
+                        <div class="pulsar-header">
+                            <span class="pulsar-id">05</span><span class="pulsar-name">PSR J1455-3330</span>
+                        </div>
+                        <div class="data-strip">
+                            <code>1.001 0.5 0.13 0.5 1010 0.5 0.16 0.5 101001 0.5 0.3 0.5 0.31</code>
+                            <span class="translation-label"><strong>Period:</strong> 1.001 × 10<sup>41</sup> t<sub>P</sub> <em>(周期)</em></span>
+                        </div>
+                        <div class="data-strip">
+                            <code>1.011 0.5 0.13 0.5 1010 0.5 0.16 0.5 110110 0.5 0.3 0.5 0.32 0.5 0.9</code>
+                            <span class="translation-label"><strong>Distance:</strong> 1.011 × 10<sup>54</sup> ℓ<sub>P</sub> <em>(距离)</em></span>
+                        </div>
+                    </div>
+
+                    <div class="pulsar-card">
+                        <div class="pulsar-header">
+                            <span class="pulsar-id">06</span><span class="pulsar-name">PSR J1600-3053</span>
+                        </div>
+                        <div class="data-strip">
+                            <code>100.0011 0.5 0.13 0.5 1010 0.5 0.16 0.5 101001 0.5 0.3 0.5 0.31</code>
+                            <span class="translation-label"><strong>Period:</strong> 100.0011 × 10<sup>41</sup> t<sub>P</sub> <em>(周期)</em></span>
+                        </div>
+                        <div class="data-strip">
+                            <code>10.001 0.5 0.13 0.5 1010 0.5 0.16 0.5 110110 0.5 0.3 0.5 0.32 0.5 0.9</code>
+                            <span class="translation-label"><strong>Distance:</strong> 10.001 × 10<sup>54</sup> ℓ<sub>P</sub> <em>(距离)</em></span>
+                        </div>
+                    </div>
+
+                    <div class="pulsar-card">
+                        <div class="pulsar-header">
+                            <span class="pulsar-id">07</span><span class="pulsar-name">PSR J1614-2230</span>
+                        </div>
+                        <div class="data-strip">
+                            <code>110.0011 0.5 0.13 0.5 1010 0.5 0.16 0.5 101001 0.5 0.3 0.5 0.31</code>
+                            <span class="translation-label"><strong>Period:</strong> 110.0011 × 10<sup>41</sup> t<sub>P</sub> <em>(周期)</em></span>
+                        </div>
+                        <div class="data-strip">
+                            <code>11.1 0.5 0.13 0.5 1010 0.5 0.16 0.5 110110 0.5 0.3 0.5 0.32 0.5 0.9</code>
+                            <span class="translation-label"><strong>Distance:</strong> 11.1 × 10<sup>54</sup> ℓ<sub>P</sub> <em>(距离)</em></span>
+                        </div>
+                    </div>
+
+                    <div class="pulsar-card">
+                        <div class="pulsar-header">
+                            <span class="pulsar-id">08</span><span class="pulsar-name">PSR J1713+0747</span>
+                        </div>
+                        <div class="data-strip">
+                            <code>1001.011 0.5 0.13 0.5 1010 0.5 0.16 0.5 101001 0.5 0.3 0.5 0.31</code>
+                            <span class="translation-label"><strong>Period:</strong> 1001.011 × 10<sup>41</sup> t<sub>P</sub> <em>(周期)</em></span>
+                        </div>
+                        <div class="data-strip">
+                            <code>1001.01 0.5 0.13 0.5 1010 0.5 0.16 0.5 110111 0.5 0.3 0.5 0.32 0.5 0.9</code>
+                            <span class="translation-label"><strong>Distance:</strong> 1001.01 × 10<sup>55</sup> ℓ<sub>P</sub> <em>(距离)</em></span>
+                        </div>
+                    </div>
+
+                    <div class="pulsar-card">
+                        <div class="pulsar-header">
+                            <span class="pulsar-id">09</span><span class="pulsar-name">PSR J1744-1134</span>
+                        </div>
+                        <div class="data-strip">
+                            <code>1.011 0.5 0.13 0.5 1010 0.5 0.16 0.5 101010 0.5 0.3 0.5 0.31</code>
+                            <span class="translation-label"><strong>Period:</strong> 1.011 × 10<sup>42</sup> t<sub>P</sub> <em>(周期)</em></span>
+                        </div>
+                        <div class="data-strip">
+                            <code>1.01 0.5 0.13 0.5 1010 0.5 0.16 0.5 110111 0.5 0.3 0.5 0.32 0.5 0.9</code>
+                            <span class="translation-label"><strong>Distance:</strong> 1.01 × 10<sup>55</sup> ℓ<sub>P</sub> <em>(距离)</em></span>
+                        </div>
+                    </div>
+
+                    <div class="pulsar-card">
+                        <div class="pulsar-header">
+                            <span class="pulsar-id">10</span><span class="pulsar-name">PSR J1857+0943</span>
+                        </div>
+                        <div class="data-strip">
+                            <code>1.101 0.5 0.13 0.5 1010 0.5 0.16 0.5 101010 0.5 0.3 0.5 0.31</code>
+                            <span class="translation-label"><strong>Period:</strong> 1.101 × 10<sup>42</sup> t<sub>P</sub> <em>(周期)</em></span>
+                        </div>
+                        <div class="data-strip">
+                            <code>101.1 0.5 0.13 0.5 1010 0.5 0.16 0.5 110101 0.5 0.3 0.5 0.32 0.5 0.9</code>
+                            <span class="translation-label"><strong>Distance:</strong> 101.1 × 10<sup>53</sup> ℓ<sub>P</sub> <em>(距离)</em></span>
+                        </div>
+                    </div>
+
+                    <div class="pulsar-card">
+                        <div class="pulsar-header">
+                            <span class="pulsar-id">11</span><span class="pulsar-name">PSR J1909-3744</span>
+                        </div>
+                        <div class="data-strip">
+                            <code>100.01 0.5 0.13 0.5 1010 0.5 0.16 0.5 101010 0.5 0.3 0.5 0.31</code>
+                            <span class="translation-label"><strong>Period:</strong> 100.01 × 10<sup>42</sup> t<sub>P</sub> <em>(周期)</em></span>
+                        </div>
+                        <div class="data-strip">
+                            <code>100.1 0.5 0.13 0.5 1010 0.5 0.16 0.5 110101 0.5 0.3 0.5 0.32 0.5 0.9</code>
+                            <span class="translation-label"><strong>Distance:</strong> 100.1 × 10<sup>53</sup> ℓ<sub>P</sub> <em>(距离)</em></span>
+                        </div>
+                    </div>
+
+                    <div class="pulsar-card">
+                        <div class="pulsar-header">
+                            <span class="pulsar-id">12</span><span class="pulsar-name">PSR J1939+2134</span>
+                        </div>
+                        <div class="data-strip">
+                            <code>1.101 0.5 0.13 0.5 1010 0.5 0.16 0.5 101011 0.5 0.3 0.5 0.31</code>
+                            <span class="translation-label"><strong>Period:</strong> 1.101 × 10<sup>43</sup> t<sub>P</sub> <em>(周期)</em></span>
+                        </div>
+                        <div class="data-strip">
+                            <code>10.0 0.5 0.13 0.5 1010 0.5 0.16 0.5 110110 0.5 0.3 0.5 0.32 0.5 0.9</code>
+                            <span class="translation-label"><strong>Distance:</strong> 10.0 × 10<sup>54</sup> ℓ<sub>P</sub> <em>(距离)</em></span>
+                        </div>
+                    </div>
+
+                    <div class="pulsar-card">
+                        <div class="pulsar-header">
+                            <span class="pulsar-id">13</span><span class="pulsar-name">PSR J2124-3358</span>
+                        </div>
+                        <div class="data-strip">
+                            <code>1.0001 0.5 0.13 0.5 1010 0.5 0.16 0.5 101100 0.5 0.3 0.5 0.31</code>
+                            <span class="translation-label"><strong>Period:</strong> 1.0001 × 10<sup>44</sup> t<sub>P</sub> <em>(周期)</em></span>
+                        </div>
+                        <div class="data-strip">
+                            <code>1.1 0.5 0.13 0.5 1010 0.5 0.16 0.5 110111 0.5 0.3 0.5 0.32 0.5 0.9</code>
+                            <span class="translation-label"><strong>Distance:</strong> 1.1 × 10<sup>55</sup> ℓ<sub>P</sub> <em>(距离)</em></span>
+                        </div>
+                    </div>
+
+                    <div class="pulsar-card">
+                        <div class="pulsar-header">
+                            <span class="pulsar-id">14</span><span class="pulsar-name">PSR J2145-0750</span>
+                        </div>
+                        <div class="data-strip">
+                            <code>1.101 0.5 0.13 0.5 1010 0.5 0.16 0.5 101101 0.5 0.3 0.5 0.31</code>
+                            <span class="translation-label"><strong>Period:</strong> 1.101 × 10<sup>45</sup> t<sub>P</sub> <em>(周期)</em></span>
+                        </div>
+                        <div class="data-strip">
+                            <code>11.0 0.5 0.13 0.5 1010 0.5 0.16 0.5 110110 0.5 0.3 0.5 0.32 0.5 0.9</code>
+                            <span class="translation-label"><strong>Distance:</strong> 11.0 × 10<sup>54</sup> ℓ<sub>P</sub> <em>(距离)</em></span>
+                        </div>
+                    </div>
+
+                    <div class="pulsar-card">
+                        <div class="pulsar-header">
+                            <span class="pulsar-id">15</span><span class="pulsar-name">PSR B1937+21</span>
+                        </div>
+                        <div class="data-strip">
+                            <code>1.011 0.5 0.13 0.5 1010 0.5 0.16 0.5 101110 0.5 0.3 0.5 0.31</code>
+                            <span class="translation-label"><strong>Period:</strong> 1.011 × 10<sup>46</sup> t<sub>P</sub> <em>(周期)</em></span>
+                        </div>
+                        <div class="data-strip">
+                            <code>11.0 0.5 0.13 0.5 1010 0.5 0.16 0.5 110101 0.5 0.3 0.5 0.32 0.5 0.9</code>
+                            <span class="translation-label"><strong>Distance:</strong> 11.0 × 10<sup>53</sup> ℓ<sub>P</sub> <em>(距离)</em></span>
+                        </div>
+                    </div>
+
+                </div>
